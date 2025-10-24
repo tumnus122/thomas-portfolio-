@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-white text-gray-800 font-inter">
+    <!-- Hero Section -->
     <section class="bg-slate-900 text-white py-20 px-6 text-center">
       <h1 class="text-4xl md:text-5xl font-bold mb-4">Thomas Shorter</h1>
       <p class="text-xl md:text-2xl mb-6">Helping Mission-Critical Teams Ship Secure Software Faster</p>
@@ -16,12 +17,16 @@
         <a href="#contact" class="border border-white py-3 px-6 rounded-lg hover:bg-white hover:text-slate-900">Let’s Connect</a>
       </div>
     </section>
+
+    <!-- About Me -->
     <section class="max-w-4xl mx-auto py-16 px-6">
       <h2 class="text-3xl font-bold mb-6 text-center">About Me</h2>
       <p class="text-lg text-gray-700 leading-relaxed text-center">
         I’m a B2B software sales professional with <strong>3+ years of experience</strong> driving enterprise and mid-market growth at <strong>CodeSecure</strong> (formerly GrammaTech). I specialize in helping organizations across <strong>automotive, aerospace/defense, industrial, and medical device</strong> sectors secure their embedded and mission-critical software. Using <strong>MEDDIC/MEDDPIC</strong> methodologies, I lead complex Proof-of-Concept (PoC) evaluations and consistently deliver a <strong>win rate well above industry average</strong>.
       </p>
     </section>
+
+    <!-- Sales Achievements -->
     <section id="achievements" class="bg-slate-100 py-16 px-6">
       <div class="max-w-5xl mx-auto">
         <h2 class="text-3xl font-bold mb-8 text-center">Sales Achievements</h2>
@@ -33,6 +38,8 @@
         </ul>
       </div>
     </section>
+
+    <!-- Key Wins / Case Studies -->
     <section class="max-w-6xl mx-auto py-16 px-6">
       <h2 class="text-3xl font-bold mb-10 text-center">Key Wins & Case Studies</h2>
       <div class="grid md:grid-cols-2 gap-8">
@@ -53,6 +60,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Contact -->
     <section id="contact" class="bg-slate-900 text-white py-16 px-6 text-center">
       <h2 class="text-3xl font-bold mb-6">Let’s Connect</h2>
       <p class="text-slate-300 mb-8">Interested in connecting or learning more about my experience?</p>
@@ -63,16 +72,25 @@
       <div class="mb-8">
         <p class="text-slate-300">📞 Mobile: <a href="tel:4435470590" class="text-blue-400 hover:underline">443-547-0590</a></p>
       </div>
-      <form name="contact" method="POST" data-netlify="true" class="max-w-xl mx-auto bg-slate-800 p-8 rounded-xl space-y-4">
+
+      <!-- Contact Form -->
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?thanks=true" class="max-w-xl mx-auto bg-slate-800 p-8 rounded-xl space-y-4">
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
         <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 rounded-md text-black" />
         <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 rounded-md text-black" />
         <textarea name="message" placeholder="Your Message" rows="4" class="w-full p-3 rounded-md text-black"></textarea>
         <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg w-full">Send Message</button>
       </form>
+
       <div class="mt-10">
         <a href="Thomas Shorter Resume 2025 - Word (1) (1) (1) (1).docx" class="text-blue-400 hover:underline">Download Resume</a>
       </div>
     </section>
+
+    <!-- Footer -->
     <footer class="bg-slate-800 text-slate-400 text-center py-6 text-sm">
       © 2025 Thomas Shorter. All Rights Reserved.
     </footer>
